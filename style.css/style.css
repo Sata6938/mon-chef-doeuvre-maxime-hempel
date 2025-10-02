@@ -32,3 +32,29 @@ header {
     text-decoration: none;
     color: rgb(255, 1, 242);
 }
+
+section {
+    padding: 2rem 0;
+    border-top 
+}
+
+
+input, textarea {
+    width: 100%;
+    box-sizing; border-box;
+    margin-button: 1rem;
+    padding: 0,5rem;
+    border: 1px;
+
+}
+
+input[type="submit"] {
+    background-color: aqua;
+    color: aqua;
+    border: none;
+    padding: 0,75rem 1,5rem;
+}
+
+input[type="submit"]:hover {
+    transition: rgb(9, 255, 0)
+}
