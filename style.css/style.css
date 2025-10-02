@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(120, 223, 180);
+    color: blue;
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0;
+}
+
+# {
+    color: greenyellow;
+}
