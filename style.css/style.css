@@ -1,15 +1,34 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(120, 223, 180);
-    color: blue;
+    background-color: rgb(216, 175, 219);
+    color: rgb(3, 3, 3);
     margin: 0;
 }
 
 .container {
     max-width: 960px;
-    margin: 0;
+    margin: 0 auto;
 }
 
-# {
-    color: greenyellow;
+
+header {
+    display: flex;
+    justify-content: space-between; /* Gère l'alignement sur l'axe principal (horizontal par défaut) */
+    align-items: center;    /* Gère l'alignement sur l'axe secondaire (vertical par défaut) */
+    padding: 1rem 2rem;
+    background-color: rgb(172, 233, 197);
+}
+
+.menu {
+    list-style: none;
+  display: flex;
+}
+.lien {
+  display: flex;
+  margin: 0 15px;
+}
+
+.lien a {
+    text-decoration: none;
+    color: rgb(255, 1, 242);
 }
