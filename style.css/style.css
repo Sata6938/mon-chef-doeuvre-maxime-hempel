@@ -35,7 +35,6 @@ header {
 
 section {
     padding: 2rem 0;
-    border-top 
 }
 
 
@@ -64,10 +63,6 @@ body.dark-mode {
   color: #000000;
 }
 
-body.dark-mode .container {
-  background-color: #0629ee;
-  /* Ajoutez d'autres styles pour le dark mode si nécessaire */
-}
 
 body.dark-mode a {
   color: #0629ee;

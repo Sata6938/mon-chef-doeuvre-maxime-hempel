@@ -16,3 +16,26 @@ if (themeButton) {
     document.body.classList.toggle('dark-mode');
   });
 }
+
+
+
+const contactForm = document.querySelector('#contact-form');
+if (contactForm) {
+  const emailInput = document.querySelector('#email-input');
+  const messageInput = document.querySelector('#message-input');
+  const messageElement = document.querySelector('#form-message');
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const email = emailInput.value;
+    const message = messageInput.value;
+    if (email.includes('@') && message.length >= 10) {
+      messageElement.textContent = "Merci ! Votre message a bien été envoyé.";
+      messageElement.style.color = "green";
+      emailInput.value = "";
+      messageInput.value = "";
+    } else {
+      messageElement.textContent = "Erreur : email invalide ou message trop court (10 caractères min).";
+      messageElement.style.color = "red";
+    }
+  });
+}
