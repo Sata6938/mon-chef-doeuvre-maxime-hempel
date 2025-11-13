@@ -13,6 +13,7 @@ if (titre) {
 const themeButton = document.querySelector('#bouton');
 if (themeButton) {
   themeButton.addEventListener('click', () => {
+    themeButton.textContent = "white-mode !";
     document.body.classList.toggle('dark-mode');
   });
 }
