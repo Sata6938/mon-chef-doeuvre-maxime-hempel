@@ -9,3 +9,12 @@ if (titre) {
   });
 }
 
+
+const themeButton = document.querySelector('#bouton');
+
+
+if (themeButton) {
+  themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+}
