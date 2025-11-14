@@ -10,13 +10,25 @@ if (titre) {
 }
 
 
+
 const themeButton = document.querySelector('#bouton');
-if (themeButton) {
-  themeButton.addEventListener('click', () => {
+
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
     themeButton.textContent = "white-mode !";
-    document.body.classList.toggle('dark-mode');
-  });
-}
+  } else {
+    themeButton.textContent = "dark-mode !";
+  }
+});
+
+
+
+
+
+
+
+
 
 
 
