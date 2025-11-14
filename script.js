@@ -24,6 +24,23 @@ themeButton.addEventListener('click', () => {
 
 
 
+const themeButton = document.querySelector('#bouton');
+themeButton.addEventListener('click', () => {
+  const body = document.body;
+  if (!body.classList.contains('dark-mode') && !body.classList.contains('white-mode')) {
+    body.classList.add('dark-mode');
+    themeButton.textContent = "white-mode !";
+  } else if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    body.classList.add('white-mode');
+    themeButton.textContent = "mode normal !";
+  } else if (body.classList.contains('white-mode')) {
+    body.classList.remove('white-mode');
+    themeButton.textContent = "dark-mode !";
+  }
+});
+
+
 
 
 
